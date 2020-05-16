@@ -1,0 +1,161 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: sans-serif;
+}
+a {
+   max-height: 300px;
+   text-decoration: none;
+   color: #000000;
+}
+#root {
+   display: flex;
+}
+.book-shelf-section {
+   min-height: 100vh;
+   padding: 20px;
+   width: 60%;
+   display: flex;
+   /* justify-content: space-between; */
+   flex-flow: wrap;
+}
+.book-options-section {
+   padding: 20px;
+   background-color: #F8F8F8;
+   min-height: 100vh;
+   max-width: 40%;
+   width: 40%;
+   overflow: hidden;
+}
+.book-wrapper {
+   margin-right: 13px;
+   cursor: pointer;
+   max-width: 170px;
+   border-radius: 6px;
+   height: fit-content;
+   padding: 10px;
+   box-shadow: 0px 0px 13px 1px #000000;
+   transition: all .5s ease;
+}
+.book-wrapper:hover {
+   background-color: #F8F8F8;
+   transform: scale(1.05);
+}
+.book-img {
+   width: 150px;
+   height: 200px;
+}
+.book-name {
+   font-size: 23px;
+   font-weight: 600;
+   margin-top: 15px;
+}
+.edit-btn, .add-btn-section {
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5px 10px;
+   border-radius: 5px;
+   letter-spacing: 2px;
+   font-size: 14px;
+   font-weight: 700;
+   margin-top: 5px;
+   text-transform: uppercase;
+   color: #fff;
+   background-color: rgb(2, 255, 116);
+   transition: all .5s ease;
+}
+.edit-btn:hover {
+   background-color: rgba(2, 255, 116, 0.582);
+}
+.add-book-btn {
+   max-height: 16px;
+}
+.add-book-btn i {
+   cursor: pointer;
+   color: rgb(2, 255, 116);
+   transition: all .5s ease;
+   font-size: 23px;
+}
+.add-book-btn:active i {
+   transform: scale(1.8);
+}
+
+.preview-book-img {
+   max-width: 100%;
+   height: 467px;
+}
+.preview-book-name {
+   letter-spacing: 1px;
+   color: #333;
+   font-weight: 700;
+}
+.preview-book-author {
+   font-style: italic;
+   color: #333;
+   font-weight: 600;
+}
+.preview-book-plot {
+   color: #333;
+   line-height: 1.35em;
+}
+
+
+.edit-form label {
+   display: block;
+   font-weight: 700; 
+   color: #333;
+   margin-top: 5px;
+}
+.edit-form input, .edit-form textarea {
+   display: block;
+   width: 80%;
+   border: 1px solid rgb(2, 255, 116);
+   border-radius: 5px;
+   padding: 5px;
+   resize: none;
+}
+.edit-form input:focus, .edit-form textarea:focus {
+   outline: none;
+   border: 2px solid rgba(2, 255, 116, 0.582);
+}
+.save-btn {
+   display: inline-block;
+   cursor: pointer;
+   border: none;
+   border-radius: 5px;
+   font-size: 15px;
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: 700;
+   letter-spacing: 1px;
+   padding: 10px;
+   background-color: rgb(2, 255, 116);
+   transition: all .5s ease;
+   margin-top: 5px;
+   margin-right: 5px;
+}
+.cancel-btn {
+   cursor: pointer;
+   border: none;
+   border-radius: 5px;
+   font-size: 15px;
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: 700;
+   letter-spacing: 1px;
+   padding: 10px;
+   background-color: tomato;
+   transition: all .5s ease;
+   margin-top: 5px;
+}
+.cancel-btn:hover {
+   background-color: rgba(255, 99, 71, 0.692);
+}
+.save-btn:hover {
+   background-color: rgba(2, 255, 116, 0.582);
+}
